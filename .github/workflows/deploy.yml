@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          NEXT_PUBLIC_LASTFM_API_KEY: ${{ secrets.NEXT_PUBLIC_LASTFM_API_KEY }}
+          NEXT_PUBLIC_LASTFM_USER: ${{ secrets.NEXT_PUBLIC_LASTFM_USER }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
