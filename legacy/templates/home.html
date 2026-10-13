@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="../static/styles.css" />
+		<title>Homepage</title>
+	</head>
+	<body>
+		<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100">
+			<site-nav></site-nav>
+		</header>
+
+		<!-- Main Container -->
+		<div class="thick-border outer-border page-container">
+			<div class="head">
+				<p>Homepage</p>
+			</div>
+			<div class="thick-border" style="padding: 24px">
+				<div style="display: flex; align-items: center; gap: 32px">
+					<div>
+						<img
+							src="../static/src/ginger.jpeg"
+							alt="Avatar"
+							style="
+								width: 120px;
+								height: 120px;
+								object-fit: cover;
+								border: 4px solid;
+
+								/* Correct path: template is in templates/, assets in static/src/ */
+								border-image: url(../static/src/menu/thick_border/thick_border.png)
+									4 fill repeat;
+								image-rendering: pixelated;
+							"
+						/>
+					</div>
+					<div>
+						<h1
+							style="
+								font-family: MagicCards, serif;
+								font-size: 2.2em;
+								color: #e0cfa9;
+								margin-bottom: 0.2em;
+							"
+						>
+							Katariah's Morrowind Website
+						</h1>
+						<p style="font-size: 1.1em; color: #b6a07a; margin-bottom: 1em">
+							Welcome to ma website
+						</p>
+					</div>
+				</div>
+				<div class="thin-border" style="margin-top: 32px; padding: 16px">
+					<h2
+						style="
+							font-family: MagicCards, serif;
+							color: #e0cfa9;
+							margin-bottom: 0.5em;
+						"
+					>
+						Q: Why does it look like that
+					</h2>
+					<ul style="list-style: none; padding: 0; color: #b6a07a">
+						A: Yes I know the website is ugly. It's lovingly styled after the
+						hit 2002 Bethesda game The Elder Scrolls III: Morrowind.
+						<br />
+						<br />
+						If you have any ideas on how to make it more readable and less ugly
+						looking while maintaining the theme, please do let me know. (I am
+						begging)
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../static/nav-component.js"></script>
+</html>

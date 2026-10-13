@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="../static/styles.css" />
+		<title>My Fonts - Katariah</title>
+		<style>
+			.font-preview {
+				margin-bottom: 32px;
+				padding: 24px;
+				background: #18140c;
+			}
+			.font-title {
+				font-size: 1.5em;
+				color: #e0cfa9;
+				margin-bottom: 0.5em;
+			}
+			.sample-text {
+				font-size: 2em;
+				color: #b6a07a;
+				margin-bottom: 0.5em;
+			}
+			.download-link {
+				color: #e0cfa9;
+				text-decoration: underline;
+				font-size: 1em;
+			}
+			.katariah-olde {
+				font-family: "Katariah Olde", MagicCards, serif;
+			}
+			.ari-hand {
+				font-family: "Ari Handwriting", MagicCards, serif;
+			}
+			.katariah-hand {
+				font-family: "Katariah Handwriting", cursive;
+			}
+
+			@font-face {
+				font-family: "Katariah Handwriting";
+				src: url(../static/src/Katariah-Handwriting-Regular.ttf);
+				font-display: swap;
+			}
+			@font-face {
+				font-family: "Katariah Olde";
+				src: url(../static/src/fonts/Katariah_Olde_Regular.ttf);
+				font-display: swap;
+			}
+			@font-face {
+				font-family: "Ari Handwriting";
+				src: url(../static/src/fonts/Ari_Handwriting_Regular.ttf);
+				font-display: swap;
+			}
+		</style>
+	</head>
+	<body>
+		<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100">
+			<site-nav></site-nav>
+		</header>
+		<div
+			class="thick-border outer-border page-container"
+			style="background: #18140c"
+		>
+			<div class="head"><p>My Fonts</p></div>
+			<div class="thick-border" style="padding: 24px; background: #1e180e">
+				<p
+					style="
+						color: #b6a07a;
+						margin: 0 0 24px 0;
+						font-size: 1.05em;
+						max-width: 60ch;
+					"
+				>
+					Some fonts I have made recently. I'm still working on getting Bold and
+					thin versions along with the Regular ones, as well as expanding the
+					character support for maths and more obscure punctuation. <br />
+					<br />
+					Feel free to use them for whatever you like, as long as you credit me
+					(I'd love to see what you use them for!)
+				</p>
+				<div class="font-preview border-thick outer-border">
+					<div class="font-title katariah-olde">Katariah Olde</div>
+					<div class="sample-text katariah-olde">
+						The quick brown fox jumps over the lazy dog 12345!?&
+					</div>
+					<a
+						class="download-link"
+						href="../static/src/fonts/Katariah_Olde_Regular.ttf"
+						download
+						>Download Katariah Olde Regular.ttf</a
+					>
+				</div>
+
+				<div class="font-preview border-thick outer-border">
+					<div class="font-title ari-hand">Ari Handwriting</div>
+					<div class="sample-text ari-hand">
+						The quick brown fox jumps over the lazy dog 12345!?&
+					</div>
+					<a
+						class="download-link"
+						href="../static/src/fonts/Ari_Handwriting_Regular.ttf"
+						download
+						>Download Ari Handwriting Regular.ttf</a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../static/nav-component.js"></script>
+</html>
