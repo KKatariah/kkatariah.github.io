@@ -8,7 +8,7 @@ import Button from "./ui/Button";
 
 const mainLinks = [
 	{ href: "/", label: "Home" },
-	{ href: "https://kkatariah.com/", label: "Minecolonies Planner" },
+	{ href: "https://kkatariah.com/minecolonies_planner", label: "Minecolonies Planner" },
 	{ href: "/contact", label: "Contact" },
 ];
 const mainHrefs = mainLinks.map((l) => l.href);
