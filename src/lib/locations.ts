@@ -15,7 +15,7 @@ export const backdrops = {
 export type Backdrop = keyof typeof backdrops;
 
 /** Used for any page not listed below (e.g. the 404) */
-export const defaultBackdrop: Backdrop = "ashlands";
+export const defaultBackdrop: Backdrop = "bitterCoast";
 
 export type Location = {
 	href: string;
@@ -33,6 +33,6 @@ export const locations: Location[] = [
 	{ href: "/character", page: "Character", town: "Ghostgate", blurb: "Stats, skills and inventory.", x: 49.5, y: 44.1, backdrop: "ashlands" },
 	{ href: "/fonts", page: "My Fonts", town: "Sadrith Mora", blurb: "Telvanni-grade typography.", x: 84.8, y: 51.1, backdrop: "telvanni" },
 	{ href: "/music", page: "Music", town: "Suran", blurb: "What I have been listening to.", x: 66.3, y: 67.7, backdrop: "hlaaluTown" },
-	{ href: "/minecolonies", page: "Minecolonies Dunmer Addon", town: "Vivec", blurb: "A Dunmer addon for MineColonies.", x: 51.6, y: 88.4, backdrop: "ashlands" },
+	{ href: "/minecolonies", page: "Minecolonies Dunmer Addon", town: "Vivec", blurb: "A Dunmer addon for MineColonies.", x: 51.6, y: 88.4, backdrop: "hlaaluTown" },
 	{ href: "/pets", page: "My Pets", town: "Dagon Fel", blurb: "Pictures of my cat.", x: 56.5, y: 10.9, backdrop: "swampDusk" },
 ];

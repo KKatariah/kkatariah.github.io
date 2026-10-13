@@ -5,7 +5,7 @@ import { backdrops, defaultBackdrop, locations, type Backdrop as BackdropName } 
 
 /** Full-screen game screenshot behind every page; crossfades when the region changes. */
 export default function Backdrop() {
-	const pathname = usePathname();
+	const pathname = usePathname().replace(/\/$/, "") || "/";
 	const active = locations.find((l) => l.href === pathname)?.backdrop ?? defaultBackdrop;
 
 	return (
