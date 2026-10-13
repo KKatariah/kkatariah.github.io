@@ -45,7 +45,7 @@ export default function MinecoloniesPage() {
 			</Frame>
 			<p className="muted" style={{ marginTop: 20 }}>
 				In the meantime, plan your colony with my{" "}
-				<a href="https://kkatariah.com/">MineColonies planner</a>.
+				<a href="https://kkatariah.com/minecolonies_planner">MineColonies planner</a>.
 			</p>
 		</Panel>
 	);
